@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "serve dist/bene/browser -s -l 3000",
+    "dev": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "engines": {
+    "node": ">=22.12.0"
   },
   "private": true,
   "packageManager": "npm@11.8.0",
@@ -18,6 +22,7 @@
     "@angular/platform-browser": "^21.2.0",
     "@angular/router": "^21.2.0",
     "rxjs": "~7.8.0",
+    "serve": "^14.2.0",
     "tslib": "^2.3.0"
   },
   "devDependencies": {
