@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "serve dist/bene/browser -s -l 3000 --listen 0.0.0.0",
+    "start": "serve dist/bene/browser -s -l tcp://0.0.0.0:3000",
     "dev": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
